@@ -2,8 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  // Important for Neon database
   experimental: {
-    optimizeCss: true,
+    serverComponentsExternalPackages: ['@neondatabase/serverless'],
   },
 }
 
